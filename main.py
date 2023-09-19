@@ -57,7 +57,8 @@ def click_img(imagePath):
 def click_img_plus_x(imagePath, pixel):
     location = pyautogui.locateCenterOnScreen(imagePath, confidence = conf)
     x, y = location
-    pyautogui.click(x + pixel, y)
+    #pyautogui.click(x + pixel, y)
+    pyautogui.click(x, y)
 
 
 def doubleClickImg (imagePath):
